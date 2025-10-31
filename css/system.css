@@ -1,0 +1,143 @@
+:root{
+    /* basic size 1rem */
+    --basic-font-pc:20px;
+    --basic-font-tab:18px;
+    --basic-font-mobile:14px;
+
+    /* color variation */
+    --butter-yellow-0:#FFFFF5;    
+    --butter-yellow-main-100:#FDFDC5;
+    --butter-yellow-200:#F9F998;
+    --butter-yellow-300:#F2F270;
+    --butter-yellow-400:#E9E950;
+    --butter-yellow-500:#DDDD38;
+    --butter-yellow-600:#CDCD27;
+    --butter-yellow-700:#B8B81B;
+    --butter-yellow-800:#A0A013;
+    --butter-yellow-900:#87870E;
+
+    --crispy-orange-0:#FFF9F5;
+    --crispy-orange-100:#FDDDC5;
+    --crispy-orange-200:#F9C298;
+    --crispy-orange-main-300:#F2A970;
+    --crispy-orange-400:#E99350;
+    --crispy-orange-500:#DD8038;
+    --crispy-orange-600:#CD6F27;
+    --crispy-orange-700:#B85F1B;
+    --crispy-orange-800:#A05013;
+    --crispy-orange-900:#87420E;
+
+    /* font-weight */
+    --font-strong:700;
+    --font-normal:400;
+
+    /* line-height */
+    --base-line-height:1.2;
+    --text-line-height:1.4;
+
+    /* spacing */
+    --space-normal:1rem;
+    --space-x-small:0.5rem;
+    --space-2x-small:0.25rem;
+    --space-x-large:2rem;
+    --space-2x-large:3rem;
+    --space-3x-large:6rem;
+
+    /* semantic color */
+    --color-inactive:#777;
+
+    /* device width */
+    --device-tab:1440px;
+    --device-mobile:786px;
+
+}
+
+    html{
+        font-size: var(--basic-font-pc);
+        font-family: 'Pretendard',sans-serif;
+        line-height: var(--base-line-height);
+    }
+    h1{
+        font-size: 1.6rem;
+        font-weight: var(--font-strong);
+    }
+    h2{
+        font-size: 1.4rem;
+        font-weight: var(--font-strong);
+    }
+    h3{
+        font-size: 1.25rem;
+        font-weight: var(--font-strong);
+    }
+    h4{
+        font-size: 1rem;
+        font-weight: var(--font-strong);
+    }
+    p{
+        font-size: 1rem;
+        line-height: var(--text-line-height);
+    }
+    .b2{
+        font-size: 0.9rem;
+    }
+    .detail{
+        font-size: 0.8rem;
+    }
+    .point{
+        font-family: "Song Myung", "DM Serif Text", "serif";
+    }
+    .common-frame{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .logo img{
+        height: 5rem;
+    }
+    .btn-all-menu img{
+        height: 1.2rem;
+    }
+    .slider-container{
+        overflow-x: auto;
+        /* 슬라이드처럼 멈춤 /
+        / scroll-snap-type: x mandatory;  /
+        -webkit-overflow-scrolling: touch; / iOS 부드러운 스크롤 */
+        white-space: nowrap;
+        display: flex;
+        border: 1px solid #ccc;
+}
+
+        .slider-track {
+        display: flex;
+        }
+        ::-webkit-scrollbar{
+            width: 0.25rem;
+            height: 0.25rem;
+        }
+        ::-webkit-scrollbar-track{
+            background: var(--butter-yellow-100);
+            /* border-radius: 10px; */
+        }
+        ::-webkit-scrollbar-thumb{
+            background: var(--butter-yellow-300);
+            border-radius: 10px;
+        }
+
+
+    @media (max-width:1440px){
+        html{
+            font-size: var(--basic-font-tab);
+        }
+        .common-frame{
+            width: auto;
+            margin: 0 2rem;
+        }
+    }
+    @media (max-width:768px){
+        html{
+            font-size: var(--basic-font-mobile);
+        }
+        .common-frame{
+            width: auto;
+            margin: 0 1rem;
+        }
+    }
