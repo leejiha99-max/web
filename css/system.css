@@ -1,3 +1,20 @@
+@media (min-width:1920px){
+    body{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+main{
+    margin-top: 106px;
+    /* header의 높이만큼 여백을 위로 줌 */
+    transition: margin-top 0.6s ease 0s;
+    min-height: 2000px;
+}
+
+header.fold~main{
+    margin-top: 44px;
+}
+
 :root{
     /* basic size 1rem */
     --basic-font-pc:20px;
@@ -56,6 +73,10 @@
         font-size: var(--basic-font-pc);
         font-family: 'Pretendard',sans-serif;
         line-height: var(--base-line-height);
+    }
+    em{
+        font-style: inherit;
+        color: var(--crispy-orange-main-300);
     }
     h1{
         font-size: 1.6rem;
@@ -131,6 +152,13 @@
             width: auto;
             margin: 0 2rem;
         }
+        main{
+        margin-top: 94px;
+        }
+        
+        header.fold~main{
+        margin-top: 94px;
+    }
     }
     @media (max-width:768px){
         html{
@@ -139,5 +167,11 @@
         .common-frame{
             width: auto;
             margin: 0 1rem;
+        }
+        main{
+        margin-top: 74px;
+        }
+        header.fold~main{
+        margin-top: 74px;
         }
     }

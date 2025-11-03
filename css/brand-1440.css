@@ -1,0 +1,20 @@
+@media (max-width:1440px){
+    .brand-txt h1{
+    font-size: 35px;
+}
+    .brand-txt{
+    flex: 7;
+    }
+    .brand-img{
+    flex: 5;
+}
+    .txt-story{
+    flex: 710;
+    padding-left: 0;
+    padding-top: 5rem;
+}
+    .story-2 .txt-story{
+    padding-left: 0;
+    padding-right: 0;
+}
+}
