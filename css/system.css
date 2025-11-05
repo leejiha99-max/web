@@ -143,6 +143,38 @@ header.fold~main{
             border-radius: 10px;
         }
 
+        .ln1{
+            display: -webkit-box;          
+            -webkit-box-orient: vertical;  
+            -webkit-line-clamp: 1;        
+            overflow: hidden;            
+            text-overflow: ellipsis;       
+            }
+
+        .ln2{
+            display: -webkit-box;         
+            -webkit-box-orient: vertical;  
+            -webkit-line-clamp: 2;         
+            overflow: hidden;              
+            text-overflow: ellipsis;      
+            }
+
+        .ln3{
+            display: -webkit-box;          
+            -webkit-box-orient: vertical;  
+            -webkit-line-clamp: 3;         
+            overflow: hidden;              
+            text-overflow: ellipsis;       
+            }
+
+            
+            /* 플렉스형 박스(옛 사양) /
+            / 세로 방향 줄바꿈 기준 /
+            / 보여줄 최대 줄 수 /
+            / 넘치는 내용 숨기기 /
+            / 말줄임 표기(보조) */
+
+
 
     @media (max-width:1440px){
         html{
