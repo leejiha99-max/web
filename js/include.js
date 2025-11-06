@@ -3,7 +3,8 @@
     .then(data => {
         document.querySelector(".header-wrap").innerHTML += data
         // 성공 시 이벤트 추가
-     
+
+     /////////////////////////헤더에 들어가는 기능들 //////////////////////////////
     let btnAllMenu = document.querySelector(".btn-all-menu")
     let hiddenGnb = document.querySelector(".hidden-gnb")
     let btnClose = document.querySelector(".btn-close")
@@ -25,6 +26,7 @@
             li.classList.toggle("on")     
             
         })
+        ///////////////////////////////////////////////////
         
     })
 
