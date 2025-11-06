@@ -1,0 +1,15 @@
+@media (max-width:768px){
+    .detail-1{
+         margin: 10rem 1rem var(--space-3x-large);
+    flex-direction: column;
+}
+    .detail-1>section{
+        width: auto;
+}
+    .detail-desc .desc{
+    height: 100px;
+    overflow: auto;
+    margin-bottom: var(--space-3x-large);
+}
+
+}
