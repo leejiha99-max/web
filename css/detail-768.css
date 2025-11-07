@@ -11,5 +11,13 @@
     overflow: auto;
     margin-bottom: var(--space-3x-large);
 }
-
+    .sticky-menu {
+    top: 77px;
+}
+    .info-list{
+    flex-direction: column;
+}
+    .review-track li{
+    width: 197px;
+}
 }
